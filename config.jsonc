@@ -137,7 +137,6 @@
       "key": "├󰻠 CPU",
       "keyColor": "green",
       "temp": true,
-      "freqNdigits": 1,
     },
     {
       "type": "memory",

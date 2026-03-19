@@ -1,183 +1,78 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "key": {
+      "width": 10,
+    },
+    "size": {
+      "binaryPrefix": "jedec",
+    },
+    "separator": "",
+  },
   "logo": {
     "type": "kitty-direct",
-    "source": "/home/bimbok/arch/walls/zenitsu.png",
-    "width": 35,
-    "height": 20,
-    "padding": {
-      "top": 2,
-      "left": 2,
-      "right": 4,
-    },
-  },
-  "display": {
-    "separator": " ",
-    "color": {
-      "keys": "blue",
-      "separator": "90",
-    },
-    "brightColor": true,
-    "key": {
-      "width": 18,
-    },
-    "bar": {
-      "char": {
-        "elapsed": "━",
-        "total": "━",
-      },
-      "border": {
-        "left": "",
-        "right": "",
-      },
-      "color": {
-        "elapsed": "cyan",
-        "total": "90",
-      },
-      "width": 15,
-    },
-    "percent": {
-      "type": ["bar", "num-color"],
-      "color": {
-        "green": "32",
-        "yellow": "33",
-        "red": "31",
-      },
-    },
+    "source": "~/.config/fastfetch/marin.png",
+    "width": 20,
+    "height": 10,
   },
   "modules": [
-    {
-      "type": "title",
-      "keyWidth": 10,
-    },
+    "break",
     {
       "type": "os",
-      "key": " OS",
+      "key": "os",
       "keyColor": "yellow",
+      "format": "{name}",
     },
     {
       "type": "kernel",
-      "key": "├ Kernel",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "packages",
-      "key": "├󰏖 Packages",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "shell",
-      "key": "├ Shell",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "localIP",
-      "key": "├󰩟 Local IP",
-      "keyColor": "yellow",
-    },
-    {
-      "type": "uptime",
-      "key": "└󰅐 Start Time",
-      "keyColor": "yellow",
-    },
-    "break",
-    {
-      "type": "de",
-      "key": " DE",
-      "keyColor": "blue",
-    },
-    {
-      "type": "wm",
-      "key": "├󰧨 Window Manager",
-      "keyColor": "blue",
-    },
-    {
-      "type": "lm",
-      "key": "├󰧨 Login Manager",
-      "keyColor": "blue",
-    },
-    {
-      "type": "wmtheme",
-      "key": "├󰉼 WM Theme",
-      "keyColor": "blue",
-    },
-    {
-      "type": "theme",
-      "key": "├󰉼 Color Themes",
-      "keyColor": "blue",
-    },
-    {
-      "type": "icons",
-      "key": "├󰸉 System Icons",
-      "keyColor": "blue",
-    },
-    {
-      "type": "font",
-      "key": "├ System Fonts",
-      "keyColor": "blue",
-    },
-    {
-      "type": "terminal",
-      "key": "└ Terminal",
-      "keyColor": "blue",
-    },
-    "break",
-    {
-      "type": "chassis",
-      "key": "󰌢 PC",
+      "key": "ker",
       "keyColor": "green",
     },
     {
-      "type": "board",
-      "key": "├ Board",
+      "type": "packages",
+      "key": "pkgs",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "shell",
+      "key": "sh",
+      "keyColor": "blue",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "wm",
+      "key": "wm",
+      "keyColor": "red",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "uptime",
+      "key": "up",
       "keyColor": "green",
     },
     {
       "type": "cpu",
-      "key": "├󰻠 CPU",
-      "keyColor": "green",
-      "temp": true,
+      "key": "cpu",
+      "keyColor": "red",
+      "format": "{name}",
     },
     {
       "type": "memory",
-      "key": "├󰑭 RAM",
-      "keyColor": "green",
-    },
-    {
-      "type": "swap",
-      "key": "├󰓡 Zram",
-      "keyColor": "green",
+      "key": "ram",
+      "keyColor": "yellow",
+      "format": "{used} / {total}",
     },
     {
       "type": "disk",
-      "key": "├ Disk",
-      "keyColor": "green",
+      "key": "disk",
+      "keyColor": "cyan",
+      "folders": ["/"],
+      "format": "{size-used} / {size-total}",
     },
+    "break",
     {
-      "type": "battery",
-      "key": "├ Battery",
-      "keyColor": "green",
-    },
-    {
-      "type": "gpu",
-      "key": "├󰍛 GPU",
-      "keyColor": "green",
-      "detectionMethod": "auto",
-    },
-    {
-      "type": "opengl",
-      "key": "├󰍛 OpenGL",
-      "keyColor": "green",
-    },
-    {
-      "type": "vulkan",
-      "key": "├󰍛 Vulkan",
-      "keyColor": "green",
-    },
-    {
-      "type": "display",
-      "key": "└󰍹 Display(s)",
-      "keyColor": "green",
+      "type": "custom",
+      "format": "\u001b[33m󰮯 \u001b[32m󰊠 \u001b[34m󰊠 \u001b[31m󰊠 \u001b[36m󰊠 \u001b[35m󰊠 \u001b[37m󰊠 \u001b[97m󰊠",
     },
   ],
 }

@@ -42,6 +42,16 @@ Run the tmux-friendly config:
 fastfetch --config ~/.config/fastfetch/config-tmux.jsonc
 ```
 
+Use this shell snippet to switch automatically when inside `tmux`:
+
+```bash
+if [[ -n "$TMUX" ]]; then
+    fastfetch --config ~/.config/fastfetch/config-tmux.jsonc
+else
+    fastfetch
+fi
+```
+
 ## Install
 
 Copy this directory into your Fastfetch config path:

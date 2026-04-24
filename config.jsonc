@@ -2,9 +2,9 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
     "type": "kitty-direct",
-    "source": "/home/bimbok/arch/walls/zenitsu.png",
+    "source": "~/.config/fastfetch/anya.png",
     "width": 37,
-    "height": 20,
+    "height": 25,
     "padding": {
       "top": 2,
       "left": 2,

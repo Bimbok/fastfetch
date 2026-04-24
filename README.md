@@ -7,6 +7,10 @@ Personal `fastfetch` setup with:
 
 ## Preview
 
+### Marin Image
+
+![Marin Image](./marin.png)
+
 ### Main Config
 
 ![Main Fastfetch Preview](./Sample/2026-04-24-123241_hyprshot.png)

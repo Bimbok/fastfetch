@@ -1,5 +1,48 @@
-#### Download The image: 
-<img width="3152" height="3364" alt="Image" src="https://github.com/user-attachments/assets/548d365d-e455-4d42-9d1f-67036cf2f655" />
+# Fastfetch Config
 
-#### demo
-<img width="1920" height="1048" alt="Image" src="https://github.com/user-attachments/assets/499b4da1-2971-451c-9abb-157a1126df70" />
+Personal `fastfetch` setup with:
+
+- `config.jsonc` for the full layout with the `anya.png` logo
+- `config-tmux.jsonc` for a compact tmux-friendly layout without the image logo
+
+## Preview
+
+### Logo
+
+![Anya logo used by fastfetch](anya.png)
+
+### Samples
+
+![Default fastfetch sample](sample/2026-04-24-124236_hyprshot.png)
+
+![Tmux fastfetch sample](sample/2026-04-24-124244_hyprshot.png)
+
+## Files
+
+- `config.jsonc`
+- `config-tmux.jsonc`
+- `anya.png`
+- `sample/`
+
+## Usage
+
+Run the normal config:
+
+```bash
+fastfetch --config ~/.config/fastfetch/config.jsonc
+```
+
+Use the tmux-aware launcher:
+
+```bash
+if [[ -n "$TMUX" ]]; then
+    fastfetch --config ~/.config/fastfetch/config-tmux.jsonc
+else
+    fastfetch
+fi
+```
+
+## Notes
+
+- The default config expects Kitty image support because it uses `"type": "kitty-direct"` for the logo.
+- If your default fastfetch config path already points here, `fastfetch` is enough outside tmux.

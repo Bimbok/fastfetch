@@ -54,11 +54,19 @@ fi
 | ![Anya](./anya.png) | ![Marin](./marin.png) |
 
 ### Screenshots
-Check the `sample/` directory for full-terminal previews:
-- **Main Preview:** `sample/2026-04-24-123241_hyprshot.png`
-- **Tmux Preview:** `sample/2026-04-24-123255_hyprshot.png`
-- **Anya Layout:** `sample/2026-04-24-124236_hyprshot.png`
-- **Anya Tmux:** `sample/2026-04-24-124244_hyprshot.png`
+Below are full-terminal previews of the configurations in action:
+
+#### 1. Marin Layout (Standard)
+![Main Preview](./sample/2026-04-24-123241_hyprshot.png)
+
+#### 2. Tmux Layout (ASCII)
+![Tmux Preview](./sample/2026-04-24-123255_hyprshot.png)
+
+#### 3. Anya Layout (Detailed)
+![Anya Layout](./sample/2026-04-24-124236_hyprshot.png)
+
+#### 4. Anya Layout in Tmux
+![Anya Tmux](./sample/2026-04-24-124244_hyprshot.png)
 
 ---
 
